@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chien-Wen Lin — Academic Portfolio</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'微軟正黑體','Microsoft JhengHei','Noto Sans TC',sans-serif;
+         background:#f5f7fa; color:#2c3e50; line-height:1.75; }
+
+  /* ─── Hero ─── */
+  .hero { background:linear-gradient(135deg,#1a3864 0%,#2b6cb0 60%,#3182ce 100%);
+          color:white; padding:56px 40px 48px; }
+  .hero-inner { max-width:960px; margin:0 auto; display:flex; gap:36px; align-items:center; }
+  .avatar { width:110px; height:110px; border-radius:50%;
+            background:rgba(255,255,255,.18); display:flex; align-items:center;
+            justify-content:center; font-size:3rem; flex-shrink:0;
+            border:3px solid rgba(255,255,255,.4); }
+  .hero-text h1 { font-size:2.1rem; font-weight:700; }
+  .hero-text .en { font-size:1rem; opacity:.8; margin-bottom:6px; }
+  .hero-text .roles { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .role-tag { background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.35);
+              border-radius:20px; padding:4px 14px; font-size:.83rem; }
+
+  /* ─── Layout ─── */
+  .wrap { max-width:960px; margin:0 auto; padding:40px 24px 80px; }
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media(max-width:680px){ .two-col { grid-template-columns:1fr; } }
+
+  /* ─── Section ─── */
+  .sec { background:#fff; border-radius:12px; padding:28px 28px;
+         box-shadow:0 2px 10px rgba(0,0,0,.07); margin-bottom:24px; }
+  .sec-title { font-size:1.05rem; font-weight:700; color:#1a3864;
+               border-left:4px solid #2b6cb0; padding-left:12px; margin-bottom:18px; }
+
+  /* ─── Expertise tags ─── */
+  .tags { display:flex; flex-wrap:wrap; gap:8px; }
+  .etag { background:#ebf4ff; color:#2b6cb0; border-radius:6px;
+          padding:5px 14px; font-size:.87rem; font-weight:600; }
+  .etag.green { background:#f0fff4; color:#276749; }
+  .etag.purple{ background:#faf5ff; color:#6b46c1; }
+  .etag.orange{ background:#fffaf0; color:#c05621; }
+
+  /* ─── Timeline ─── */
+  .tl-item { display:flex; gap:16px; margin-bottom:16px; }
+  .tl-dot { width:10px; height:10px; border-radius:50%; background:#2b6cb0;
+             margin-top:7px; flex-shrink:0; }
+  .tl-body h3 { font-size:.95rem; font-weight:700; color:#2d3748; }
+  .tl-body .sub { font-size:.83rem; color:#718096; }
+  .tl-body p { font-size:.87rem; color:#4a5568; margin-top:3px; }
+
+  /* ─── Publication ─── */
+  .pub { border-left:3px solid #2b6cb0; padding:10px 0 10px 16px; margin-bottom:12px; }
+  .pub .badge { display:inline-block; background:#2b6cb0; color:#fff;
+                font-size:.72rem; border-radius:4px; padding:1px 8px; margin-right:6px; }
+  .pub .badge.conf { background:#276749; }
+  .pub p { font-size:.85rem; color:#4a5568; margin-top:4px; }
+
+  /* ─── Achievement card ─── */
+  .ach-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:14px; }
+  .ach-card { border:1px solid #e2e8f0; border-radius:8px; padding:16px;
+              background:#fafafa; }
+  .ach-card .icon { font-size:1.6rem; margin-bottom:8px; }
+  .ach-card h3 { font-size:.92rem; font-weight:700; color:#2d3748; margin-bottom:4px; }
+  .ach-card p { font-size:.82rem; color:#718096; }
+  .placeholder { background:#fffbeb; border:1px dashed #f6ad55;
+                 border-radius:6px; padding:10px 14px; font-size:.82rem;
+                 color:#c05621; margin-top:8px; }
+
+  /* ─── Contact ─── */
+  .contact-row { display:flex; gap:24px; flex-wrap:wrap; }
+  .contact-item { display:flex; align-items:center; gap:8px; font-size:.9rem; }
+  .contact-item a { color:#2b6cb0; text-decoration:none; }
+
+  footer { text-align:center; color:#a0aec0; font-size:.8rem; padding:32px; }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="avatar">🎓</div>
+    <div class="hero-text">
+      <div class="en">Chien-Wen Lin, Ph.D.</div>
+      <h1>林　千　文</h1>
+      <div class="roles">
+        <span class="role-tag">助理教授</span>
+        <span class="role-tag">元智大學　兼任助理教授</span>
+        <span class="role-tag">資訊技術總監</span>
+        <span class="role-tag">AI・資料科學・深度學習</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- 研究專長 -->
+  <div class="sec">
+    <div class="sec-title">研究與教學專長</div>
+    <div class="tags">
+      <span class="etag">人工智慧</span>
+      <span class="etag">機器學習</span>
+      <span class="etag">深度學習</span>
+      <span class="etag">強化學習</span>
+      <span class="etag green">生成式AI應用</span>
+      <span class="etag green">資料探勘</span>
+      <span class="etag purple">大數據分析</span>
+      <span class="etag purple">計算城市科學</span>
+      <span class="etag orange">特徵工程</span>
+      <span class="etag orange">房價預測建模</span>
+    </div>
+  </div>
+
+  <div class="two-col">
+
+    <!-- 學歷 -->
+    <div class="sec">
+      <div class="sec-title">學歷</div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <h3>工學博士</h3>
+          <div class="sub">國立臺灣海洋大學　電機工程研究所（資訊科技組）</div>
+          <p>97年9月－111年6月　指導教授：呂紹偉、倪澤恩</p>
+          <p>論文：房價模型特徵工程技術之對稱分析</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <h3>文學碩士</h3>
+          <div class="sub">國防大學國防管理學院　國防資訊研究所</div>
+          <p>86年9月－88年6月</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 現職 -->
+    <div class="sec">
+      <div class="sec-title">現職</div>
+      <div class="tl-item">
+        <div class="tl-dot" style="background:#276749"></div>
+        <div class="tl-body">
+          <h3>兼任助理教授</h3>
+          <div class="sub">元智大學　財務金融暨會計碩士班</div>
+          <p>113年2月－迄今　機器學習・深度學習・強化學習</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" style="background:#276749"></div>
+        <div class="tl-body">
+          <h3>資訊技術總監</h3>
+          <div class="sub">鼎申結構技師事務所</div>
+          <p>113年1月－迄今　資訊技術管理・AI應用系統規劃</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 主要經歷 -->
+  <div class="sec">
+    <div class="sec-title">主要經歷</div>
+    <div class="two-col">
+      <div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>資訊技術總監・資訊長</h3>
+            <div class="sub">鼎申結構技師/原和不動產估價師事務所</div>
+            <p>105年10月－112年12月　AI應用導入・智慧城市專案・資料整合</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>兼任助理教授</h3>
+            <div class="sub">台北城市科技大學・龍華科技大學</div>
+            <p>大數據分析・AI應用・資料結構・計算機網路</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>軍訓教官</h3>
+            <div class="sub">國立台北教育大學</div>
+            <p>100年1月－103年9月　生輔組組長・國防科技管理教授</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <h3>軍訓教官</h3>
+            <div class="sub">國立臺灣海洋大學</div>
+            <p>95年9月－100年1月　生輔組組長・國防科技管理教授</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 學術著作 -->
+  <div class="sec">
+    <div class="sec-title">學術著作</div>
+    <div class="pub">
+      <span class="badge">SCI</span>
+      <strong>Lin, C. W. et al.</strong>「Continuous Symmetry Analysis of the Effects of City Infrastructures on Invariant Metrics for House Market Volatilities.」
+      <em>Computer Modeling in Engineering & Sciences</em>, 2022, 133, 619–638.
+    </div>
+    <div class="pub">
+      <span class="badge">SCI</span>
+      <strong>Lin, C. W. et al.</strong>「Lie symmetry analysis of the effects of urban infrastructures on residential property values.」
+      <em>PLOS ONE</em>, 2021, 16, e0255233.
+    </div>
+    <div class="pub">
+      <span class="badge conf">國際研討會</span>
+      <strong>Lin, C. W. et al.</strong>「A Web-Based Intelligent Chinese Computer Assisted Instruction.」
+      <em>International Conference on Chinese Language Computing</em>, 2000.
+    </div>
+    <div class="pub">
+      <span class="badge conf" style="background:#718096">國內</span>
+      研討會論文共7篇（2012–2013年計算機/自動化研討會，1998–2000年電腦輔助教學系列）
+    </div>
+  </div>
+
+  <!-- 實務績效 -->
+  <div class="sec">
+    <div class="sec-title">產業實務績效</div>
+    <div class="ach-grid">
+
+      <div class="ach-card">
+        <div class="icon">🏙️</div>
+        <h3>智慧城市 AIoT 專案</h3>
+        <p style="font-size:.83rem;font-weight:700;color:#2b6cb0;">主導規劃｜澎湖縣政府・雲林縣政府</p>
+        <p style="font-size:.83rem;color:#4a5568;margin-top:6px;">
+          主導規劃「愛國者物聯網（Patriot IoT）」智慧城市整合方案，整合 EV（電動車）、AV（自駕車）與 AIoT（AI物聯網）架構，為澎湖縣政府及雲林縣政府提供完整智慧城市技術規劃，民國111年10月發表。
+        </p>
+      </div>
+
+      <div class="ach-card">
+        <div class="icon">🏆</div>
+        <h3>國防部網站精進</h3>
+        <p style="font-size:.83rem;font-weight:700;color:#2b6cb0;">承辦人｜中華民國國防部</p>
+        <p style="font-size:.83rem;color:#4a5568;margin-top:6px;">
+          擔任承辦人，全程規劃設計並發包執行「國防部全球資訊網站功能精進」計畫，成果獲國防部全球資訊網站功能精進記者會公開表揚，為國防數位化治理做出具體貢獻。
+        </p>
+      </div>
+
+      <div class="ach-card">
+        <div class="icon">🤖</div>
+        <h3>AI系統導入實務</h3>
+        <p>鼎申事務所・原和估價師事務所</p>
+        <p style="font-size:.83rem;color:#4a5568;margin-top:6px;">資料整合・AI應用系統規劃・智慧城市資料分析・決策支援系統建置</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="icon">📚</div>
+        <h3>元智授課成果</h3>
+        <p>機器學習・深度學習・強化學習</p>
+        <p style="font-size:.83rem;color:#4a5568;margin-top:6px;">113年2月至今，碩士班實作導向教學，學生完成商業AI專題，具備金融科技應用能力</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 博士論文 -->
+  <div class="sec">
+    <div class="sec-title">博士論文</div>
+    <div style="background:#f7faff;border-radius:8px;padding:18px 20px;">
+      <p style="font-weight:700;margin-bottom:6px;">房價模型特徵工程技術之對稱分析</p>
+      <p style="font-size:.85rem;color:#718096;margin-bottom:10px;">Symmetry Analysis of Feature Engineering Technique for House Price Modeling</p>
+      <p style="font-size:.87rem;color:#4a5568;">以<strong>特徵工程</strong>為核心，整合波士頓、密爾瓦基、台北、東京四城市政府開放資料，建構住宅房價預測模型，以<strong>MAE、MSE、RMSE</strong>等機器學習標準指標驗證效能，並引入薛丁格方程式之<strong>李氏對稱性分析框架</strong>，發現公共交通與公園設施對房價影響的<strong>尺度指數比約3：2</strong>，跨四城市一致。與傳統享樂價格模型（HPM）對比，李氏對稱性分析在房價波動解讀上具更優效能。</p>
+      <p style="font-size:.82rem;color:#718096;margin-top:8px;">國立臺灣海洋大學電機工程研究所，111年6月　｜　指導教授：呂紹偉・倪澤恩</p>
+    </div>
+  </div>
+
+  <!-- 聯絡 -->
+  <div class="sec">
+    <div class="sec-title">聯絡資訊</div>
+    <div class="contact-row">
+      <div class="contact-item">📧 <a href="mailto:wendy.hunglin@gmail.com">wendy.hunglin@gmail.com</a></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  林千文　Chien-Wen Lin, Ph.D.　｜　wendy.hunglin@gmail.com
+</footer>
+
+</body>
+</html>

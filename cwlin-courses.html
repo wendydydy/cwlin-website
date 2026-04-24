@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chien-Wen Lin — Course Materials</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: '微軟正黑體', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
+         background: #f5f7fa; color: #2c3e50; line-height: 1.7; }
+
+  /* ─── Header ─── */
+  header { background: linear-gradient(135deg, #1a3864 0%, #2b6cb0 100%);
+           color: white; padding: 48px 40px 36px; }
+  header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 6px; }
+  header p  { font-size: 1rem; opacity: .85; }
+  header .tag { display:inline-block; background:rgba(255,255,255,.18);
+                border:1px solid rgba(255,255,255,.35); border-radius:20px;
+                padding:3px 14px; font-size:.82rem; margin-top:12px; margin-right:8px; }
+
+  /* ─── Content wrapper ─── */
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  /* ─── Section title ─── */
+  .sec-title { font-size:1.1rem; font-weight:700; color:#1a3864;
+               border-left:4px solid #2b6cb0; padding-left:12px;
+               margin: 40px 0 16px; }
+
+  /* ─── Philosophy box ─── */
+  .philosophy { background:#fff; border-radius:10px; padding:24px 28px;
+                box-shadow:0 2px 8px rgba(0,0,0,.07); margin-bottom:8px;
+                border-left:4px solid #48bb78; }
+  .philosophy p { color:#444; font-size:.96rem; }
+
+  /* ─── University block ─── */
+  .uni-block { background:#fff; border-radius:12px; margin-bottom:28px;
+               box-shadow:0 2px 10px rgba(0,0,0,.08); overflow:hidden; }
+  .uni-header { padding:16px 24px; display:flex; align-items:center; gap:12px; }
+  .uni-header h2 { font-size:1.05rem; font-weight:700; color:#fff; }
+  .uni-header .period { font-size:.82rem; color:rgba(255,255,255,.8); margin-left:auto; }
+  .uni-YZU  .uni-header { background:#2b6cb0; }
+  .uni-UTPO .uni-header { background:#276749; }
+  .uni-LHU  .uni-header { background:#744210; }
+
+  /* ─── Course card ─── */
+  .courses { padding:16px 20px 20px; display:grid;
+             grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap:14px; }
+  .card { border:1px solid #e2e8f0; border-radius:8px; padding:16px 18px;
+          background:#fafafa; display:flex; flex-direction:column; gap:8px; }
+  .card-name { font-weight:700; font-size:.97rem; color:#2d3748; }
+  .card-meta { font-size:.82rem; color:#718096; }
+  .card-desc { font-size:.84rem; color:#4a5568; flex:1; }
+  .card-tags { display:flex; flex-wrap:wrap; gap:5px; }
+  .ctag { font-size:.75rem; background:#ebf4ff; color:#2b6cb0;
+          border-radius:4px; padding:2px 8px; }
+  .ctag.green { background:#f0fff4; color:#276749; }
+  .ctag.orange{ background:#fffaf0; color:#c05621; }
+  .btn-link { display:inline-block; margin-top:4px; padding:6px 14px;
+              background:#2b6cb0; color:white; border-radius:6px;
+              text-decoration:none; font-size:.82rem; text-align:center;
+              transition:background .2s; }
+  .btn-link:hover { background:#1a3864; }
+  .btn-link.green { background:#276749; }
+  .btn-link.green:hover { background:#1c4532; }
+  .btn-link.orange { background:#c05621; }
+  .btn-link.orange:hover { background:#7b341e; }
+
+  /* ─── Stats bar ─── */
+  .stats { display:flex; gap:20px; flex-wrap:wrap; margin-bottom:32px; }
+  .stat-box { background:#fff; border-radius:10px; padding:18px 24px;
+              box-shadow:0 2px 8px rgba(0,0,0,.07); flex:1; min-width:160px;
+              text-align:center; }
+  .stat-num { font-size:2rem; font-weight:700; color:#2b6cb0; }
+  .stat-lbl { font-size:.82rem; color:#718096; margin-top:2px; }
+
+  /* ─── Footer ─── */
+  footer { text-align:center; color:#a0aec0; font-size:.8rem; padding:32px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>九、數位教材製作成果</h1>
+  <p>林千文　助理教授　｜　AI 與資料科學教學實務</p>
+  <span class="tag">Google Colab + Python</span>
+  <span class="tag">PDF講義</span>
+  <span class="tag">範例程式</span>
+  <span class="tag">多校實作教材</span>
+</header>
+
+<div class="wrap">
+
+  <!-- 教學理念 -->
+  <div class="sec-title">教學理念</div>
+  <div class="philosophy">
+    <p>本人所開發之數位教材以「<strong>問題導向、實作優先</strong>」為核心理念，每門課程均提供結構化PDF講義與可執行的Python程式範例，搭配Google Colab雲端環境，學生無需安裝任何套件即可直接上機操作。教材設計強調理論與商業應用並重，協助學生從「理解演算法」進階到「解決真實問題」。</p>
+  </div>
+
+  <!-- 統計 -->
+  <div class="sec-title">教材總覽</div>
+  <div class="stats">
+    <div class="stat-box"><div class="stat-num">3</div><div class="stat-lbl">合作學校</div></div>
+    <div class="stat-box"><div class="stat-num">8</div><div class="stat-lbl">開課科目</div></div>
+    <div class="stat-box"><div class="stat-num">5+</div><div class="stat-lbl">學期累積</div></div>
+    <div class="stat-box"><div class="stat-num">100%</div><div class="stat-lbl">雲端公開存取</div></div>
+  </div>
+
+  <!-- 元智大學 -->
+  <div class="sec-title">各校課程教材連結</div>
+  <div class="uni-block uni-YZU">
+    <div class="uni-header">
+      <h2>🎓 元智大學　財務金融暨會計碩士班</h2>
+      <span class="period">113學年～迄今</span>
+    </div>
+    <div class="courses">
+
+      <div class="card">
+        <div class="card-name">機器學習</div>
+        <div class="card-meta">碩士班 ｜ 3學分</div>
+        <div class="card-desc">Scikit-learn實作、監督式與非監督式學習、模型評估與商業應用，含PDF講義及Colab程式範例。</div>
+        <div class="card-tags">
+          <span class="ctag">Scikit-learn</span>
+          <span class="ctag">分類/迴歸</span>
+          <span class="ctag">模型評估</span>
+        </div>
+        <a class="btn-link" href="https://e.pcloud.link/publink/show?code=kZIjCPZiT795h3dCTJgpTfJBqCT5V0ROaDV" target="_blank">📂 113-1教材</a>
+        <a class="btn-link" href="https://e.pcloud.link/publink/show?code=kZvAN3ZMMoWy54xR6z0DFVYg166h49o6LrV" target="_blank">📂 114-2教材</a>
+      </div>
+
+      <div class="card">
+        <div class="card-name">深度學習</div>
+        <div class="card-meta">碩士班 ｜ 3學分</div>
+        <div class="card-desc">CNN、RNN/LSTM、GAN、DRL等深度學習架構，搭配TensorFlow/Keras實作，結合金融時序預測案例。</div>
+        <div class="card-tags">
+          <span class="ctag">TensorFlow</span>
+          <span class="ctag">CNN/RNN</span>
+          <span class="ctag">金融應用</span>
+        </div>
+        <a class="btn-link" href="https://e.pcloud.link/publink/show?code=kZjJ5lZshB3LPmKrxpQ54SeLc2WCfetMVjV" target="_blank">📂 113-2教材</a>
+      </div>
+
+      <div class="card">
+        <div class="card-name">強化學習</div>
+        <div class="card-meta">碩士班 ｜ 3學分</div>
+        <div class="card-desc">Q-Learning、DQN、Policy Gradient，強化學習理論與演算法交易、投資組合管理應用實作。</div>
+        <div class="card-tags">
+          <span class="ctag">DQN</span>
+          <span class="ctag">演算法交易</span>
+          <span class="ctag">OpenAI Gym</span>
+        </div>
+        <a class="btn-link" href="https://e.pcloud.link/publink/show?code=kZ0owOZbgnmXCWoytkHSkBpq9V4nLkbVhLk" target="_blank">📂 114-1教材</a>
+        <a class="btn-link" href="https://e.pcloud.link/publink/show?code=kZEyCnZCGv9PiSKrc7k5kIBMCjlvHLyAmay" target="_blank">📂 112-2教材</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 台北城市科大 -->
+  <div class="uni-block uni-UTPO">
+    <div class="uni-header">
+      <h2>🎓 台北城市科技大學</h2>
+      <span class="period">近兩學年</span>
+    </div>
+    <div class="courses">
+
+      <div class="card">
+        <div class="card-name">大數據分析與應用</div>
+        <div class="card-meta">通識教育中心 ｜ 2學分</div>
+        <div class="card-desc">Pandas資料處理、EDA探索性分析、預測建模與商業決策整合，含完整Colab實作範例。</div>
+        <div class="card-tags">
+          <span class="ctag green">Pandas</span>
+          <span class="ctag green">EDA</span>
+          <span class="ctag green">商業分析</span>
+        </div>
+        <a class="btn-link green" href="https://e.pcloud.link/publink/show?code=kZlygOZmRaqnCnYzamXGX44B51dbkVC5IkX" target="_blank">📂 114-1教材</a>
+      </div>
+
+      <div class="card">
+        <div class="card-name">人工智慧分析與應用</div>
+        <div class="card-meta">大學部 ｜ 3學分</div>
+        <div class="card-desc">AI概論到應用實作，涵蓋機器學習、深度學習基礎，以商業智慧場景為導向設計課程內容。</div>
+        <div class="card-tags">
+          <span class="ctag green">AI概論</span>
+          <span class="ctag green">ML實作</span>
+          <span class="ctag green">商業應用</span>
+        </div>
+        <a class="btn-link green" href="https://e.pcloud.link/publink/show?code=kZQ7gOZ6K5xGbH54zjnlfTVJnMYE0mVCyXX" target="_blank">📂 114-1教材</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 龍華科大 -->
+  <div class="uni-block uni-LHU">
+    <div class="uni-header">
+      <h2>🎓 龍華科技大學　電子工程系</h2>
+      <span class="period">114學年度第2學期</span>
+    </div>
+    <div class="courses">
+
+      <div class="card">
+        <div class="card-name">資料結構</div>
+        <div class="card-meta">大學部 ｜ 3學分</div>
+        <div class="card-desc">陣列、鏈結串列、樹、圖形、排序與搜尋演算法，含Python實作練習與課堂範例程式。</div>
+        <div class="card-tags">
+          <span class="ctag orange">資料結構</span>
+          <span class="ctag orange">演算法</span>
+          <span class="ctag orange">Python</span>
+        </div>
+        <a class="btn-link orange" href="https://e.pcloud.link/publink/show?code=kZUULGZLkjfD8BRMSR17OjnJgAWWQylrLn7" target="_blank">📂 114-2教材</a>
+      </div>
+
+      <div class="card">
+        <div class="card-name">電子產業研討</div>
+        <div class="card-meta">大學部 ｜ 2學分</div>
+        <div class="card-desc">電子產業AI應用趨勢、半導體與製造業數位轉型案例研討，培養產業分析與簡報表達能力。</div>
+        <div class="card-tags">
+          <span class="ctag orange">產業分析</span>
+          <span class="ctag orange">AI應用</span>
+          <span class="ctag orange">數位轉型</span>
+        </div>
+        <a class="btn-link orange" href="https://e.pcloud.link/publink/show?code=kZaIEvZTvVu3hX7llLzT3e7oH5WGjcqAEn7" target="_blank">📂 114-2教材</a>
+      </div>
+
+      <div class="card">
+        <div class="card-name">計算機網路</div>
+        <div class="card-meta">大學部 ｜ 3學分</div>
+        <div class="card-desc">網路協定、TCP/IP架構、網路安全基礎，結合物聯網與雲端運算應用，理論與實務兼顧。</div>
+        <div class="card-tags">
+          <span class="ctag orange">TCP/IP</span>
+          <span class="ctag orange">網路安全</span>
+          <span class="ctag orange">IoT</span>
+        </div>
+        <a class="btn-link orange" href="https://e.pcloud.link/publink/show?code=kZjPHiZKqEGILcbBfB3UPnJVCeEc5KoACi7" target="_blank">📂 114-2教材</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 教材特色說明 -->
+  <div class="sec-title">教材設計特色</div>
+  <div class="philosophy">
+    <p>
+      ① <strong>全程Colab雲端實作</strong>——所有程式範例均可在Google Colab直接執行，學生無需本機安裝環境。<br><br>
+      ② <strong>理論╳商業應用並行</strong>——每週講義結合演算法原理與真實商業場景（金融預測、客戶分析、AI決策），非純技術教學。<br><br>
+      ③ <strong>PDF講義結構化</strong>——每堂課均有獨立PDF，涵蓋概念說明、數學推導（適度）、程式說明與課後練習，便於學生自學複習。<br><br>
+      ④ <strong>持續更新維護</strong>——教材依產業最新發展（如生成式AI、LLM應用）持續更新，確保內容時效性。
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  林千文　Chien-Wen Lin　｜　wendy.hunglin@gmail.com
+</footer>
+
+</body>
+</html>
